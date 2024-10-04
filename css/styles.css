@@ -124,27 +124,25 @@ address .link:hover {
 }
 .page-hero {
   background-image: linear-gradient(
-    to bottom,
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  ),
-  url("../images/people-office.jpg");
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-background-color: #2e2f42;
-padding: 188px 0;
-width: 100%;
-max-width: 1440px; 
-margin: 0 auto; 
- 
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #2e2f42;
+  padding: 188px 0;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .container-hero {
   align-items: center;
   flex-direction: column;
   gap: 20px;
   max-width: 1440px;
- 
 }
 .page-title {
   max-width: 496px;
@@ -383,10 +381,6 @@ footer .text {
   padding: 0 20px;
 }
 
-
-
-
-
 /* Modal'ın arka planı (backdrop) */
 .modal-backdrop {
   position: fixed;
@@ -413,11 +407,11 @@ footer .text {
   border-radius: 8px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
   z-index: 101;
-  width: 25%;
+  width: 30%;
   padding: 20px;
 }
 
-.modal-title{
+.modal-title {
   margin-top: 40px;
   font-size: 16px;
 }
@@ -427,7 +421,7 @@ footer .text {
   display: block;
   top: 10px;
   right: 10px;
-  width: 30px;  /* Buton genişliği */
+  width: 30px; /* Buton genişliği */
   height: 30px; /* Buton yüksekliği */
   text-align: center; /* Metni yatayda ortala */
   line-height: 30px; /* Satır yüksekliği, buton yüksekliğiyle aynı */
@@ -436,31 +430,28 @@ footer .text {
   color: #000;
   cursor: pointer;
   text-decoration: none;
-  background-color:#E7E9FC;
+  background-color: #e7e9fc;
   border-radius: 50%;
 }
-.close-btn:hover{
-  background-color: #404BBF;
+.close-btn:hover {
+  background-color: #404bbf;
 }
-.close-btn:hover svg{
+.close-btn:hover svg {
   fill: #fff;
 }
 
 /* Transitionlar */
-.is-open{
+.is-open {
   display: block;
 }
 
-
-
-
-label {
+label:not(.checkbox-label) {
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
   position: relative;
 }
-input {
+input:not(.checkbox) {
   width: 100%;
   padding: 10px;
   padding-left: 50px; /* Simge için boşluk bırak */
@@ -471,10 +462,9 @@ input {
   outline: none;
 }
 
-input:focus-within,textarea:focus-within{
-  
-  border-color:#4D5AE5;
- 
+input:focus-within,
+textarea:focus-within {
+  border-color: #4d5ae5;
 }
 .input-with-icon {
   position: absolute;
@@ -482,8 +472,7 @@ input:focus-within,textarea:focus-within{
   left: 20px;
 }
 input:focus + .input-with-icon {
-  fill: #4D5AE5; 
- 
+  fill: #4d5ae5;
 }
 
 textarea {
@@ -494,17 +483,7 @@ textarea {
   margin-top: 5px;
 }
 
-.checkbox-label {
-  display: flex; /* Checkbox ve yazıyı yan yana getir */
-  flex-direction: row;
-  align-items: center; /* Checkbox ile metni dikeyde ortala */
-}
-
-.checkbox-label input[type="checkbox"] {
-  margin-right: 5px; /* Checkbox ile yazı arasına boşluk ekle */
-}
-
-.submit-btn{
+.submit-btn {
   background-color: #4d5ae5;
   color: #ffffff;
   font-weight: 500;
@@ -520,7 +499,44 @@ textarea {
   align-self: center;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
+}
+
+.checkbox + a {
+  text-decoration: underline;
+  color: #4d5ae5;
+}
+.checkbox-label {
+  margin-bottom: 10px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  /* Tarayıcı varsayılan stilini kaldır */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* Checkbox boyutu ve kenarları */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox-label input[type="checkbox"]:checked {
+  background-color: blue; /* İşaretlendiğinde zemin rengi mavi */
+  border-color: blue;
+}
+
+.checkbox-label input[type="checkbox"]:checked::before {
+  content: "✔"; /* Onay işareti */
+  color: white;
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  line-height: 16px;
 }
