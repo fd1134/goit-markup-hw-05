@@ -423,7 +423,7 @@
         </div>
       </section>
 
-      <div id="modal1" class="modal-backdrop is-open">
+      <div id="modal1" class="modal-backdrop">
         <div class="modal-content">
           <a href="#" class="close-btn">
             <svg width="8" height="8">
@@ -461,18 +461,12 @@
               Comment
               <textarea rows="5"> </textarea>
             </label>
-
+           
             <label class="checkbox-label">
-              <input
-                type="checkbox"
-                class="checkbox form-input"
-                name="hobby"
-                value="music"
-              />
-              I accept the terms and conditions of the
-              <a href="#">Privacy Policy</a>
+              <input type="checkbox" class="checkbox form-input" name="hobby" value="music" />
+              I accept the terms and conditions of the <a href="#">Privacy Policy</a>
             </label>
-
+         
             <button type="submit" class="submit-btn">Send</button>
           </form>
         </div>
@@ -524,10 +518,23 @@
             </li>
           </ul>
         </div>
+        <div class="footer-input">
+         
+          <h2 class="visually-hidden"></h2>
+        <h3 class="footer-input-title">Subscribe</h3>
+         <div class="footer-input-input">
+            <input type="email"  placeholder="E-mail" class="footer-email"> 
+            <button type="submit" class="footer-btn" >
+              Subscribe
+              <svg class="icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+            
+          </div>
+        </div>
       </div>
+      
     </footer>
-    <div class="input-container">
-      <input type="tel" placeholder="Telefon numaranızı girin" />
-    </div>
   </body>
 </html>
