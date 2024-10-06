@@ -457,9 +457,9 @@ label:not(.checkbox-label) {
   line-height: 14px;
   font-weight: 400;
 }
-input:not(.checkbox,.footer-email,.footer-btn) {
+input:not(.checkbox, .footer-email, .footer-btn) {
   width: 100%;
-  padding:15px 10px;
+  padding: 15px 10px;
   padding-left: 50px; /* Simge için boşluk bırak */
   margin-top: 5px;
   border: 1px solid #ccc;
@@ -519,7 +519,7 @@ form {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  gap:5px;
+  gap: 5px;
   margin-bottom: 10px;
   font-weight: 400;
   line-height: 14px;
@@ -554,33 +554,30 @@ form {
   text-align: center;
   line-height: 16px;
 }
-.footer-input-title{
+.footer-input-title {
   color: #fff;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
- 
- 
-
 }
-.footer-input-input{
+.footer-input-input {
   display: flex;
   gap: 10px;
 }
 
-.footer-email{
+.footer-email {
   padding: 10px 0;
   outline: none;
   border: 1px solid #ccc;
   background-color: transparent;
 }
 
-.footer-btn{
+.footer-btn {
   display: flex;
   gap: 10px;
   padding: 10px 0;
-  color:#fff;
+  color: #fff;
   background-color: #4d5ae5;
   outline: none;
-  padding:10px 50px;
+  padding: 10px 50px;
 }
