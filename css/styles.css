@@ -388,7 +388,7 @@ footer .text {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(6, 47, 66, 0.7); /* Yarı saydam siyah */
+  background-color: rgba(46, 47, 66, 0.4); /* Yarı saydam siyah */
   display: none; /* Varsayılan olarak gizli */
   z-index: 100;
 }
@@ -399,7 +399,7 @@ footer .text {
   flex-direction: column;
   gap: 10px;
   position: fixed;
-  top: 59%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
@@ -407,13 +407,16 @@ footer .text {
   border-radius: 8px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
   z-index: 101;
-  width: 30%;
+  width: 25%;
   padding: 20px;
 }
 
 .modal-title {
   margin-top: 40px;
   font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
 }
 /* Modal Kapat Butonu */
 .close-btn {
@@ -450,10 +453,13 @@ label:not(.checkbox-label) {
   flex-direction: column;
   margin-bottom: 8px;
   position: relative;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
 }
 input:not(.checkbox,.footer-email,.footer-btn) {
   width: 100%;
-  padding: 10px;
+  padding:15px 10px;
   padding-left: 50px; /* Simge için boşluk bırak */
   margin-top: 5px;
   border: 1px solid #ccc;
@@ -494,7 +500,7 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   transition-property: background-color;
-  padding: 20px 60px;
+  padding: 15px 60px;
   text-align: center;
   align-self: center;
 }
@@ -509,7 +515,15 @@ form {
   color: #4d5ae5;
 }
 .checkbox-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap:5px;
   margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  font-size: 12px;
 }
 
 .checkbox-label input[type="checkbox"] {
