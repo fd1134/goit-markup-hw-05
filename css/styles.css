@@ -476,7 +476,7 @@ textarea:focus-within {
 }
 .input-with-icon {
   position: absolute;
-  top: 25px;
+  top: 32px;
   left: 20px;
 }
 input:focus + .input-with-icon {
