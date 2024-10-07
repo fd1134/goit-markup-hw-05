@@ -259,7 +259,7 @@ address .link:hover {
 .social-links {
   display: flex;
   justify-content: space-between;
-  gap: 4px;
+  gap: 10px;
   flex-shrink: 0;
   padding: 0 20px;
 }
@@ -353,7 +353,7 @@ address .link:hover {
 }
 .container-footer {
   display: flex;
-  gap: 170px;
+  gap: 70px;
   justify-content: start;
 }
 .container-footer-logo {
@@ -422,11 +422,10 @@ footer .text {
 .close-btn {
   position: absolute;
   display: block;
-  top: 10px;
-  right: 10px;
-  width: 30px; /* Buton genişliği */
-  height: 30px; /* Buton yüksekliği */
-  text-align: center; /* Metni yatayda ortala */
+  top: 15px;
+  right: 15px;
+  width: 24px; /* Buton genişliği */
+  height: 24px; /* Buton yüksekliği */
   line-height: 30px; /* Satır yüksekliği, buton yüksekliğiyle aynı */
   border: none;
   background-color: transparent;
@@ -435,6 +434,9 @@ footer .text {
   text-decoration: none;
   background-color: #e7e9fc;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .close-btn:hover {
   background-color: #404bbf;
@@ -459,7 +461,7 @@ label:not(.checkbox-label) {
 }
 input:not(.checkbox, .footer-email, .footer-btn) {
   width: 100%;
-  padding: 15px 10px;
+  padding: 8px 10px;
   padding-left: 50px; /* Simge için boşluk bırak */
   margin-top: 5px;
   border: 1px solid #ccc;
@@ -474,7 +476,7 @@ textarea:focus-within {
 }
 .input-with-icon {
   position: absolute;
-  top: 35px;
+  top: 25px;
   left: 20px;
 }
 input:focus + .input-with-icon {
@@ -500,7 +502,7 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   transition-property: background-color;
-  padding: 15px 60px;
+  padding: 16px 60px;
   text-align: center;
   align-self: center;
 }
@@ -508,6 +510,7 @@ textarea {
 form {
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
 .checkbox + a {
@@ -535,8 +538,8 @@ form {
   /* Checkbox boyutu ve kenarları */
   width: 20px;
   height: 20px;
-  border: 2px solid #000;
-  border-radius: 3px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
   cursor: pointer;
   position: relative;
 }
@@ -566,10 +569,13 @@ form {
 }
 
 .footer-email {
-  padding: 10px 0;
+  padding: 10px 10px;
+  font-size: 12px;
   outline: none;
   border: 1px solid #ccc;
   background-color: transparent;
+  width: 264px;
+  border-radius: 4px;
 }
 
 .footer-btn {
@@ -579,8 +585,10 @@ form {
   color: #fff;
   background-color: #4d5ae5;
   outline: none;
-  padding: 10px 50px;
+  padding: 10px 20px;
+  border: 1px solid rgba(77, 90, 229, 1);
+  border-radius: 4px;
 }
-textarea{
+textarea {
   padding: 10px;
 }
