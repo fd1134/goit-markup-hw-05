@@ -581,3 +581,6 @@ form {
   outline: none;
   padding: 10px 50px;
 }
+textarea{
+  padding: 10px;
+}
